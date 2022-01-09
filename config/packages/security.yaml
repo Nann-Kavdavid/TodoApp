@@ -20,7 +20,11 @@ security:
         main:
             lazy: true
             provider: app_user_provider
-
+#            entry_point: App\Security\LoginFormAuthenticator
+#            custom_authenticators:
+#                - App\Security\LoginFormAuthenticator
+                # Add the new Authenticator of Github
+#                - App\Security\GithubAuthenticator
             # activate different ways to authenticate
             # https://symfony.com/doc/current/security.html#the-firewall
 

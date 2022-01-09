@@ -1,0 +1,11 @@
+knpu_oauth2_client:
+  clients:
+    # OAuth clientのID（任意）
+    github_main:
+      type: github
+      client_id: '%env(OAUTH_GITHUB_CLIENT_ID)%'
+      client_secret: '%env(OAUTH_GITHUB_CLIENT_SECRET)%'
+      redirect_route: connect_github_check
+      redirect_params: {}
+      # OAuth2状況をチェック用
+      # use_state: true
